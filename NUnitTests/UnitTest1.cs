@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace NUnitTestsWithAttachments;
+namespace NUnitTests;
 
 public class Tests
 {
@@ -19,7 +19,7 @@ public class Tests
     public void SuccessfulTestWithAnImage()
     {
         var assembly = Assembly.GetExecutingAssembly();
-        string resourceName = "NUnitTestsWithAttachments.TestResources.cat.jpg";
+        string resourceName = "NUnitTests.TestResources.cat.jpg";
 
         using (Stream resourceStream = assembly.GetManifestResourceStream(resourceName))
         {
@@ -42,7 +42,7 @@ public class Tests
     public void FailedTestWithAnImage()
     {
         var assembly = Assembly.GetExecutingAssembly();
-        string resourceName = "NUnitTestsWithAttachments.TestResources.404.png";
+        string resourceName = "NUnitTests.TestResources.404.png";
 
         using (Stream resourceStream = assembly.GetManifestResourceStream(resourceName))
         {
@@ -66,7 +66,7 @@ public class Tests
     [Test] public void TestWithATextFile()
     {
         var assembly = Assembly.GetExecutingAssembly();
-        string resourceName = "NUnitTestsWithAttachments.TestResources.file.rtf";
+        string resourceName = "NUnitTests.TestResources.file.rtf";
 
         using (Stream resourceStream = assembly.GetManifestResourceStream(resourceName))
         {
