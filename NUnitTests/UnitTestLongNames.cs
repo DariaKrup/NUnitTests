@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace NUnitTestsWithAttachments.Namespace1.Namespace2.Namespace3.Namespace4.Namespace5.Namespace6.Namespace7.ThisIsAVeryLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongNamespaceName;
+namespace NUnitTests.Namespace1.Namespace2.Namespace3.Namespace4.Namespace5.Namespace6.Namespace7.ThisIsAVeryLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongNamespaceName;
 
 public class UnitTestsLongNames
 {
@@ -9,7 +9,7 @@ public class UnitTestsLongNames
     public void ThisIsTestWithNameLongerThanDirectoryMaxAllowedLength12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890()
     {
         var assembly = Assembly.GetExecutingAssembly();
-        string resourceName = "NUnitTestsWithAttachments.TestResources.avatar.jpg";
+        string resourceName = "NUnitTests.TestResources.avatar.jpg";
 
         using (Stream resourceStream = assembly.GetManifestResourceStream(resourceName))
         {
