@@ -39,7 +39,6 @@ changeBuildType(RelativeId("NUnitConsoleRunnerDeprecatedNUnitRunner1dll")) {
     steps {
         update<NUnitStep>(2) {
             clearConditions()
-            platform = NUnitStep.Platform.x64
             runProcessPerAssembly = false
         }
     }
