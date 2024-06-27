@@ -40,6 +40,8 @@ changeBuildType(RelativeId("NUnitConsoleRunnerDeprecatedNUnitRunner1dll")) {
         update<NUnitStep>(2) {
             enabled = false
             clearConditions()
+            nunitVersion = NUnitStep.NUnitVersion.NUnit_3
+            nunitPath = "%teamcity.tool.NUnit.Console.3.17.0%"
             runProcessPerAssembly = false
         }
     }
