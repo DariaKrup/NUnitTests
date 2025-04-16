@@ -56,7 +56,6 @@ project {
 
 object TestLinuxAgent : BuildType({
     name = "test, Linux agent"
-    paused = true
 
     vcs {
         root(DslContext.settingsRoot)
@@ -101,7 +100,6 @@ object TestLinuxAgent : BuildType({
 
 object TestLinuxAgentDocker : BuildType({
     name = "test, Linux agent + Docker"
-    paused = true
 
     artifactRules = "**/* => sources.zip"
 
@@ -152,7 +150,6 @@ object TestLinuxAgentDocker : BuildType({
 
 object VSTestLinuxAgent : BuildType({
     name = "VSTest, Linux agent"
-    paused = true
 
     vcs {
         root(DslContext.settingsRoot)
@@ -199,7 +196,6 @@ object VSTestLinuxAgent : BuildType({
 
 object VSTestLinuxAgentDocker : BuildType({
     name = "VSTest, Linux agent + Docker"
-    paused = true
 
     vcs {
         root(DslContext.settingsRoot)
