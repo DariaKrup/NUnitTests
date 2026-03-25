@@ -1,0 +1,10 @@
+jobs:
+  Job1:
+    name: 'Job: .NET test'
+    steps:
+      - type: dotnet-test
+        projects: NUnitTests.sln
+        name: Tests
+    allow-reuse: false
+    parameters:
+      env.parameter: param
