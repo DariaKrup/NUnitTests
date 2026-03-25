@@ -3,6 +3,7 @@ package _Self.pipelines
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.pipelines.*
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
+import jetbrains.buildServer.configs.kotlin.buildSteps.maven
 
 object ProjectWith2PipelinesDSLAndYAML_BookingApiPayconiqPipelineInTeamCity : Pipeline({
     id("BookingApiPayconiqPipelineInTeamCity")
