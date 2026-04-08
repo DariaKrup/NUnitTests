@@ -14,6 +14,12 @@ public class Tests
     {
         Assert.Pass();
     }
+
+    [Test]
+    public void TestNew()
+    {
+        Assert.Pass();
+    }
     
     [Test]
     public void SuccessfulTestWithAnImage()
