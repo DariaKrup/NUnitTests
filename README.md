@@ -1,1 +1,1 @@
-.NET Project with tests: successful
+.NET Project with tests: all successful
