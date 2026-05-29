@@ -56,7 +56,7 @@ object TestsNet : BuildType({
         commitStatusPublisher {
             vcsRootExtId = "${DslContext.settingsRoot.id}"
             publisher = github {
-                statusCheckName = "Tests .NET: text from the main branch"
+                statusCheckName = "(NEW) Tests .NET: text from the new branch"
                 githubUrl = "https://api.github.com"
                 authType = vcsRoot()
             }
